@@ -6,28 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <header>
-    <h1>Code Quiz Challenge</h1>
+    <h1 class="page-title">Code Quiz Challenge</h1>
+    <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers
+        will penalize your score/time by ten seconds!</p>
 </header>
 
-<main>
-    <div class="questions">
-        <h2>Question</h2>
-        <div class="buttons">
-            <ol>
-                <li>Answer 1</li>
-                <li>Answer 2</li>
-                <li>Answer 3</li>
-                <li>Answer 4</li>
-            </ol>
-
-        </div>
-    </div>
-</main>
-
 <body>
+    <main>
+        <div id="start-btn">
+            <button class="start-btn">
+                <h2>Start Quiz</h2>
+            </button>
+        </div>
+        <div class="questions">
+            <h2>Question</h2>
+            <div class="answers">
+                <ol>
+                    <li><button class="btn">Answer 1</button></li>
+                    <li><button class="btn">Answer 2</button></li>
+                    <li><button class="btn">Answer 3</button></li>
+                    <li><button class="btn">Answer 4</button></li>
+                </ol>
+            </div>
+        </div>
+        <div class="end-game">
+            <h2>All done!</h2>
+            <div id="save-submission">
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+    </main>
 
+
+    <script src="/assets/js/file.js"></script>
 </body>
 
 </html>
